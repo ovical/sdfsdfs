@@ -1,6 +1,4 @@
-game:GetService("StarterPlayer").StarterCharacterScripts.ClientToolChecker:Destroy()
-local h = game.Players.LocalPlayer.Name
-game.Workspace[h].ClientToolChecker:Destroy()
+
 --[[
 
               ████      ████                
@@ -66,7 +64,9 @@ local VRReady = UserInputService.VREnabled;
 local R15 = hum.RigType == Enum.HumanoidRigType.R15 and true or false
 
 local oldCF = Character.HumanoidRootPart.CFrame
-
+game:GetService("StarterPlayer").StarterCharacterScripts.ClientToolChecker:Destroy()
+local h = game.Players.LocalPlayer.Name
+game.Workspace[h].ClientToolChecker:Destroy()
 for i,v in pairs(Character:GetChildren()) do
     for _, connection in pairs(getconnections(v.ChildAdded)) do
         connection:Disable()
@@ -116,7 +116,7 @@ LocalPlayer.OnTeleport:Connect(function(State)
             options.RightHand = "Racing Helmet Flames"
             options.LeftHand = "Racing Helmet USA"
             
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/saucekid/sauceVR/main/extra/ROrilla.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ovical/sdfsdfs/main/main"))()
         ]])
     end
 end)
